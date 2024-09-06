@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda Blood Bridge</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Nav Bar -->
+<!-- Top Nav Bar -->
+<div class="top-nav">
+    <div class="language-dropdown">
+        <a href="./ManageAppoint.html">Sign In</a>
+
+        <a href="#">News/Announcements</a>
+        <a href="#">English <span class="dropdown-icon">&#9660;</span></a>
+        <div class="dropdown-content">
+            <a href="#">Kinyarwanda</a>
+            <a href="#">French</a>
+            
+            
+        </div>
+    </div>
+</div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/blood.png" alt="Rwanda Blood Bridge Logo">
+                <div class="title">
+                    <h1>Rwanda Blood Bridge</h1>
+                </div>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Donate Blood<span class="dropdown-icon">&#9660;</span></a>
+                <div class="dropdown-content">
+                    <a href="./Appiontment.html">Schedule an Appointment</a>
+                    <a href="./ManageAppoint.html">Manage Existing Appointment</a>
+                    <a href="./DonateHistory.html">View My Donation History</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">How to Donate <span class="dropdown-icon">&#9660;</span></a>
+                <div class="dropdown-content">
+                    <a href="./Eligibility.html">Eligibility Requirements</a>
+                    <a href="./BloodDonation.html">Types of Blood Donation</a>
+                    <a href="./aboutBlood.html">Learn About Blood</a>
+                    <a href="./helps.html">How Blood Donation Helps</a>
+                    <a href="./concerns.html">Common Concerns</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-content">
+                    <a href="./DonationPro.html">Donation Process Overview</a>
+                    <a href="./BeforeAfter.html">What to do Before, During, After</a>
+                    <a href="./whatHappens.html">What Happens to Donated Blood</a>
+                    <a href="./firstTimeDoner.html">First Time Blood Donors</a>
+                    <!-- <a href="./benefits.html">Benefits of Blood Donating</a> -->
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Biomedical Service <span class="dropdown-icon">&#9660;</span></a>
+                <div class="dropdown-content">
+                    <a href="./WhoweAre.html">Who We Are</a>
+                    <a href="./whatwedo.html">What We Do</a>
+                    <a href="./News.html">News and Announcements</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+       <!-- Main Container -->
+    <div class="main-container">
+        <!-- Appointment Form Section -->
+        <section class="appointment-section">
+            <h1>Schedule an Appointment</h1>
+            <p>Thank you for choosing to save lives! Scheduling a blood donation appointment is simple and ensures that your time is well-utilized. Your donation can make a difference to those in need.</p>
+            
+            <form action="/schedule-appointment" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required class="iniputs">
+
+                <label for="id">Identity:</label>
+                <input type="number" id="id" name="Identity" required  class="iniputs">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required  class="iniputs">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required  class="iniputs">
+
+                <label for="location">Preferred Location:</label>
+                <select id="location" name="location" required>
+                    <option value="kigali">Kigali</option>
+                    <option value="butare">Butare</option>
+                    <option value="musanze">Musanze</option>
+                    <!-- Add more locations as needed -->
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required  class="iniputs">
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required  class="iniputs">
+
+                <label for="blood-type">Blood Type:</label>
+                <select id="blood-type" name="blood-type">
+                    <option value="unknown">Unknown</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="notes">Additional Information:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <button  class="btn" type="submit">Schedule Appointment</button >
+            </form>
+        </section>
+
+        <!-- Sidebar Section -->
+        <section class="sidebar">
+            <!-- Appointment Guidelines Section -->
+            <div class="guidelines-section">
+                <h2>Appointment Guidelines</h2>
+                <p>Please bring a valid ID and your donor card if you have one. Ensure you are well-hydrated and have eaten a nutritious meal before donating.</p>
+            </div>
+
+            <!-- Nearby Location Section -->
+            <div class="locations-section">
+                <h2>Nearby Locations</h2>
+                <div id="map">[Map Integration Here]</div>
+                <p>Visit us at one of our convenient locations across Rwanda.</p>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <h2>Need Assistance?</h2>
+                <p>For help with scheduling or any other inquiries, please contact us:</p>
+                <p><i class="fas fa-envelope"></i> Email: support@rwandabloodbridge.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +250 123 456 789</p>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <p><strong>Q: Can I reschedule my appointment?</strong></p>
+                    <p>A: Yes, you can reschedule your appointment by contacting us at least 24 hours in advance.</p>
+                </div>
+                <div class="faq-item">
+                    <p><strong>Q: What should I do before donating blood?</strong></p>
+                    <p>A: Make sure to eat a healthy meal and drink plenty of water before your appointment.</p>
+                </div>
+                <!-- Add more FAQs as needed -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer with Social Icons -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+        
+    </body>
+   </html>
