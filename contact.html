@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eligibility Requirements</title>
+    <title>Learn About Blood</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -56,7 +56,6 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="#">Blood Donation Process<span class="dropdown-icon">&#9660;</span></a>
                 <div class="dropdown-content">
                     <a href="./DonationPro.html">Donation Process Overview</a>
                     <a href="./BeforeAfter.html">What to do Before, During, After</a>
@@ -76,54 +75,44 @@
         </ul>
     </nav>
 
+    <!-- Contact Form Section -->
+    <main id="contact-section">
+        <header>
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need assistance, feel free to reach out to 
+                us through the form below. We’ll get back to you as soon as possible.</p>
+        </header>
 
-    <header>
-        <h1>Eligibility Requirements</h1>
-    </header>
-
-    <!-- Main Content Section -->
-    <main id="eligibility-requirements">
-        <!-- Introduction -->
-        <section class="eligibility-intro">
-            <p>Before you donate blood, it's important to make sure you meet the necessary requirements. Here are some general eligibility guidelines you should consider.</p>
-        </section>
-
-        <!-- Eligibility Criteria -->
-        <section class="eligibility-section">
-            <div class="eligibility-content">
-                <img src="./images/eligibility.jpg" alt="Eligibility Criteria" class="eligibility-image">
-                <div class="eligibility-info">
-                    <h2>General Eligibility Requirements</h2>
-                    <p>To ensure the safety of both donors and recipients, donors must meet certain criteria. Here are the general eligibility requirements you need to know before donating blood:</p>
-                    <ul>
-                        <li><i class="icon-check"></i> Age: Must be at least 18 years old (16-17 with parental consent).</li>
-                        <li><i class="icon-check"></i> Weight: Minimum weight of 50 kg (110 lbs).</li>
-                        <li><i class="icon-check"></i> Health: Must be in good general health and feeling well.</li>
-                        <li><i class="icon-check"></i> Medical History: No recent history of certain diseases or medical conditions.</li>
-                    </ul>
+        <section class="contact-form-section">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 </div>
-            </div>
-        </section>
 
-        <!-- Specific Eligibility Information -->
-        <section class="eligibility-section">
-            <div class="eligibility-content">
-                <img src="./images/world-no-tobacco-day-concept.jpg" alt="Health and Medical History" class="eligibility-image">
-                <div class="eligibility-info">
-                    <h2>Health and Medical History</h2>
-                    <p>Blood donation is a simple, safe process, but not everyone is eligible to donate. Some conditions may temporarily or permanently prevent you from donating blood. Here are some specific considerations:</p>
-                    <ul>
-                        <li><i class="icon-check"></i> Travel: Recent travel to certain countries may affect eligibility.</li>
-                        <li><i class="icon-check"></i> Medications: Certain medications may prevent you from donating.</li>
-                        <li><i class="icon-check"></i> Tattoos and Piercings: You may need to wait a period after getting a tattoo or piercing.</li>
-                        <li><i class="icon-check"></i> Pregnancy: Women who are pregnant or recently pregnant may not be eligible.</li>
-                    </ul>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
         </section>
     </main>
 
-    <footer>
+
+      <!-- Footer -->
+      <footer>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -132,7 +121,9 @@
             <a href="#"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
-  
-        
-    </body>
-    </html>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+   
+</body>
+</html>

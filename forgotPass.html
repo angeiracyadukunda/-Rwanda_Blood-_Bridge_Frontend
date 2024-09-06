@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eligibility Requirements</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>What Happens to Donated Blood</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -42,7 +42,7 @@
                 <div class="dropdown-content">
                     <a href="./Appiontment.html">Schedule an Appointment</a>
                     <a href="./ManageAppoint.html">Manage Existing Appointment</a>
-                    <a href="./DonateHistory.html">View My Donation History</a>
+                    <a href="./DonationHis.html">View My Donation History</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -77,53 +77,44 @@
     </nav>
 
 
-    <header>
-        <h1>Eligibility Requirements</h1>
-    </header>
+    <!-- Forgot Password Section -->
+<section id="auth-section">
+    <div class="auth-container">
+      <h2>Forgot Password</h2>
+      <form id="forgot-password-form">
+        <label for="email">Enter your registered email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        
+        <button type="submit">Send Reset Instructions</button>
+      </form>
+      <a href="/ManageAppoint.html" class="create-account-link">Back to Login</a>
+      <div class="account-benefits">
+        <p><strong>Forgot your password?</strong> No worries! Enter your registered email address, and we’ll send you instructions to reset your password.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Content Section -->
-    <main id="eligibility-requirements">
-        <!-- Introduction -->
-        <section class="eligibility-intro">
-            <p>Before you donate blood, it's important to make sure you meet the necessary requirements. Here are some general eligibility guidelines you should consider.</p>
-        </section>
+<script>
+  document.getElementById('forgot-password-form').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-        <!-- Eligibility Criteria -->
-        <section class="eligibility-section">
-            <div class="eligibility-content">
-                <img src="./images/eligibility.jpg" alt="Eligibility Criteria" class="eligibility-image">
-                <div class="eligibility-info">
-                    <h2>General Eligibility Requirements</h2>
-                    <p>To ensure the safety of both donors and recipients, donors must meet certain criteria. Here are the general eligibility requirements you need to know before donating blood:</p>
-                    <ul>
-                        <li><i class="icon-check"></i> Age: Must be at least 18 years old (16-17 with parental consent).</li>
-                        <li><i class="icon-check"></i> Weight: Minimum weight of 50 kg (110 lbs).</li>
-                        <li><i class="icon-check"></i> Health: Must be in good general health and feeling well.</li>
-                        <li><i class="icon-check"></i> Medical History: No recent history of certain diseases or medical conditions.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    const email = document.getElementById('email').value;
 
-        <!-- Specific Eligibility Information -->
-        <section class="eligibility-section">
-            <div class="eligibility-content">
-                <img src="./images/world-no-tobacco-day-concept.jpg" alt="Health and Medical History" class="eligibility-image">
-                <div class="eligibility-info">
-                    <h2>Health and Medical History</h2>
-                    <p>Blood donation is a simple, safe process, but not everyone is eligible to donate. Some conditions may temporarily or permanently prevent you from donating blood. Here are some specific considerations:</p>
-                    <ul>
-                        <li><i class="icon-check"></i> Travel: Recent travel to certain countries may affect eligibility.</li>
-                        <li><i class="icon-check"></i> Medications: Certain medications may prevent you from donating.</li>
-                        <li><i class="icon-check"></i> Tattoos and Piercings: You may need to wait a period after getting a tattoo or piercing.</li>
-                        <li><i class="icon-check"></i> Pregnancy: Women who are pregnant or recently pregnant may not be eligible.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
 
-    <footer>
+    // Simulating sending reset instructions
+    alert('Password reset instructions have been sent to your email.');
+    // You can redirect or proceed with backend integration
+  });
+</script>
+
+      <!-- Footer -->
+      <footer>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -132,7 +123,6 @@
             <a href="#"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
-  
-        
-    </body>
-    </html>
+
+</body>
+</html>

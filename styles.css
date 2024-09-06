@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--first--color);
+    font-size: small;
 }
 
 /* Top Navigation Styles */
@@ -61,7 +62,7 @@ body {
 .main-nav {
     background-color: #fff;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -286,7 +287,6 @@ footer .social-icons img {
 
 h1, h2 {
     color: #d32f2f;
-    /* text-align: center; */
 }
 
 p {
@@ -599,8 +599,8 @@ footer {
 
 
 header {
-    background-color: var(--third--coloe); /* Red background for header */
-    color: var(--second--color); /* White text color */
+    background-color: var(--third--coloe); 
+    color: var(--second--color); 
     padding: 20px;
     text-align: center;
 }
@@ -610,7 +610,7 @@ main {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .donation-intro {
@@ -631,10 +631,10 @@ main {
 }
 
 .donation-image {
-    width: 150px; /* Fixed width for images */
-    height: 150px; /* Fixed height to maintain uniformity */
-    object-fit: cover; /* Ensures the image covers the area */
-    border-radius: 8px; /* Rounded corners for a softer look */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
 
 .donation-info {
@@ -667,13 +667,13 @@ main {
     margin-right: 10px;
 }
 
-footer {
+/* footer {
     text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
     color: #777;
     font-size: 0.9em;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -732,13 +732,13 @@ h2 {
     flex: 1;
 }
 
-footer {
+/* footer {
     text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
     color: #777;
     font-size: 0.9em;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -817,14 +817,14 @@ blockquote {
 .cta-button:hover {
     background-color: #c82333;
 }
-
+/* 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
     color: #777;
     font-size: 0.9em;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -881,13 +881,13 @@ footer {
     background-color: #c82333;
 }
 
-footer {
+/* footer {
     text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
     color: #777;
     font-size: 0.9em;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -965,15 +965,6 @@ li:before {
 .cta-button:hover {
     background-color: #c82333;
 }
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f1f1f1;
-    color: #777;
-    font-size: 0.9em;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     main {
